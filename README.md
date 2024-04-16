@@ -159,6 +159,31 @@ Or you can use ``DefaultFactoryMunch`` to specify a factory for generating missi
 
 ```
 
+Sure, I'd be happy to help you integrate your new content into the existing documentation. Here's your content, adapted to match the style and tone of the existing doc:
+
+
+Converting an Existing Dictionary to Munch
+------------------------------------------
+
+If you have an existing dictionary that you've computed and want to convert it into a Munch object, you can use the `munchify` function. This function recursively transforms a dictionary into a Munch object via copy. Here's an example:
+
+```python
+>>> b = munchify({'urmom': {'sez': {'what': 'what'}}})
+>>> b.urmom.sez.what
+'what'
+```
+
+The `munchify` function can handle intermediary dicts, lists, and tuples (as well as their subclasses). However, your mileage may vary with custom data types. Here's a more complex example:
+
+```python
+>>> b = munchify({ 'lol': ('cats', {'hah':'i win again'}),
+...         'hello': [{'french':'salut', 'german':'hallo'}] })
+>>> b.hello[0].french
+'salut'
+>>> b.lol[1].hah
+'i win again'
+```
+
 
 Miscellaneous
 -------------
