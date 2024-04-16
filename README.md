@@ -159,8 +159,6 @@ Or you can use ``DefaultFactoryMunch`` to specify a factory for generating missi
 
 ```
 
-Sure, I'd be happy to help you integrate your new content into the existing documentation. Here's your content, adapted to match the style and tone of the existing doc:
-
 
 Converting an Existing Dictionary to Munch
 ------------------------------------------
